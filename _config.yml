@@ -14,7 +14,7 @@ mermaid:
   version: "10.9.1"
 aux_links:
   "GitHub": ["https://github.com/HyperTaxonomy"]
-aux_links_new_tab: true
+aux_links_new_tab: false
 # Each plugin's docs is a separate site under this domain; list them in the sidebar.
 nav_external_links:
   - title: HyperTaxonomy
