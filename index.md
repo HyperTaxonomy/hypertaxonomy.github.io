@@ -34,10 +34,9 @@ in search results, and in linked-data clients — with no re-tagging.
 ## The plugins
 
 The HyperTaxonomy Suite is a set of focused WordPress plugins. **HyperTaxonomy**
-is the core and acts as the hub. **As the Crow Flies** is fully standalone. The
-other companions build on the same term vocabulary and do more when
-HyperTaxonomy is present; **Social Hashtags & Mentions** also requires
-**TermConnect**.
+is the core and acts as the hub. The companions build on the same term vocabulary
+and do more when HyperTaxonomy is present, but don't require it;
+**Social Hashtags & Mentions** does require **TermConnect**.
 
 <div class="plugin-grid">
   <div class="plugin-card plugin-card--core">
@@ -49,7 +48,7 @@ HyperTaxonomy is present; **Social Hashtags & Mentions** also requires
         <p class="plugin-card-tagline">Structure the unstructured</p>
       </div>
     </div>
-    <p class="plugin-card-desc">At its simplest, it organizes your terms: arrange tags, categories, and custom terms into nested groups, manage them in bulk, and display them — as term lists, collapsible trees, or filtered tag clouds — anywhere on your site. From there, model any semantic connection in your domain: inclusions (any term pulls in another's posts), synonyms (bidirectional inclusions), and 301-safe redirects. Enrich archives with descriptions, sticky posts, icons, and build faceted search widgets, which can order results relevance among other criteria — all from the WordPress admin, no coding required. As the suite's hub, it also surfaces companion data — locations from As the Crow Flies, identifiers and peer links from TermConnect, etc. — through one term API, so consumers like WP-SKOS read everything in one place.</p>
+    <p class="plugin-card-desc">At its simplest, it organizes your terms: arrange tags, categories, and custom terms into nested groups, manage them in bulk, and display them — as term lists, collapsible trees, or filtered tag clouds — anywhere on your site. From there, model any semantic connection in your domain: inclusions (any term pulls in another's posts), synonyms (bidirectional inclusions), and 301-safe redirects. Enrich archives with descriptions, sticky posts, icons, and build faceted search widgets, which can order results by relevance among other criteria — all from the WordPress admin, no coding required. As the suite's hub, it also surfaces companion data — locations from As the Crow Flies, identifiers and peer links from TermConnect, etc. — through one term API, so consumers like WP-SKOS read everything in one place.</p>
     <div class="plugin-card-footer">
       <span class="req-badge">Requires nothing</span>
       <span class="plugin-links"><a href="https://hypertaxonomy.org/hypertaxonomy/">Docs</a><a href="https://github.com/HyperTaxonomy/hypertaxonomy">GitHub</a></span>
@@ -96,7 +95,7 @@ HyperTaxonomy is present; **Social Hashtags & Mentions** also requires
     </div>
     <p class="plugin-card-desc">Attach one or more physical locations (addresses and/or coordinates) to any taxonomy term and filter WordPress content by distance — postal code, browser geolocation, or a chosen reference point. No map API required; works worldwide.</p>
     <div class="plugin-card-footer">
-      <span class="req-badge">Requires nothing</span>
+      <span class="req-badge">Requires nothing · better with HyperTaxonomy</span>
       <span class="plugin-links"><a href="https://hypertaxonomy.org/as-the-crow-flies/">Docs</a><a href="https://github.com/HyperTaxonomy/as-the-crow-flies">GitHub</a></span>
     </div>
   </div>
@@ -109,7 +108,7 @@ HyperTaxonomy is present; **Social Hashtags & Mentions** also requires
         <p class="plugin-card-tagline">Your taxonomies, as linked data</p>
       </div>
     </div>
-    <p class="plugin-card-desc">Turn any WordPress taxonomy into a machine-readable SKOS vocabulary. Each term becomes a <code>skos:Concept</code> at a stable URI; each taxonomy a <code>skos:ConceptScheme</code>. A Skosmos-compatible REST API and a concept-aware document search endpoint make your vocabulary browsable and queryable by SKOS tools, RAG pipelines, and AI agents.</p>
+    <p class="plugin-card-desc">Turn any WordPress taxonomy into a machine-readable SKOS vocabulary. Each term becomes a <code>skos:Concept</code> at a stable URI; each taxonomy a <code>skos:ConceptScheme</code>. A REST API that follows Skosmos's and a concept-aware document search endpoint make your vocabulary browsable and queryable by SKOS tools, RAG pipelines, and AI agents.</p>
     <div class="plugin-card-footer">
       <span class="req-badge">Requires nothing · better with HyperTaxonomy</span>
       <span class="plugin-links"><a href="https://hypertaxonomy.org/wp-skos/">Docs</a><a href="https://github.com/HyperTaxonomy/wp-skos">GitHub</a></span>
@@ -122,7 +121,8 @@ HyperTaxonomy is present; **Social Hashtags & Mentions** also requires
 HyperTaxonomy sits at the center as the hub. The arrows show how term data flows:
 companions enrich the shared vocabulary, HyperTaxonomy feeds its relationships
 back to them, and it exposes the combined picture — through a single term API — to
-consumers like WP-SKOS. Every plugin also works on its own.
+consumers like WP-SKOS. Every plugin except Social Hashtags & Mentions, which
+requires TermConnect, also works on its own.
 
 ```mermaid
 graph LR
@@ -138,7 +138,8 @@ graph LR
 
 1. **Install the core.** Add **[HyperTaxonomy](https://hypertaxonomy.org/hypertaxonomy/)**
    and define your term relationships — groups, inclusions, synonyms, redirects.
-   This alone improves every archive page and search result on your site.
+   This alone improves every archive page on your site, and site search once you
+   turn on PowerSearch for it.
 
 2. **Add companions as you need them.**
    - Connecting to external knowledge bases or peer sites? Add
