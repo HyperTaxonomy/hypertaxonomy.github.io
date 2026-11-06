@@ -108,7 +108,7 @@ and do more when HyperTaxonomy is present, but don't require it;
         <p class="plugin-card-tagline">Your taxonomies, as linked data</p>
       </div>
     </div>
-    <p class="plugin-card-desc">Turn any WordPress taxonomy into a machine-readable SKOS vocabulary. Each term becomes a <code>skos:Concept</code> at a stable URI; each taxonomy a <code>skos:ConceptScheme</code>. A REST API that follows Skosmos's and a concept-aware document search endpoint make your vocabulary browsable and queryable by SKOS tools, RAG pipelines, and AI agents.</p>
+    <p class="plugin-card-desc">Turn any WordPress taxonomy into a machine-readable SKOS vocabulary. Each term becomes a <code>skos:Concept</code> at a stable URI; each taxonomy a <code>skos:ConceptScheme</code>. A REST API that follows Skosmos's, a concept-aware document search endpoint, and a full export for loading into a triple store make your vocabulary browsable and queryable by SKOS tools, RAG pipelines, and AI agents.</p>
     <div class="plugin-card-footer">
       <span class="req-badge">Requires nothing · better with HyperTaxonomy</span>
       <span class="plugin-links"><a href="https://hypertaxonomy.org/wp-skos/">Docs</a><a href="https://github.com/HyperTaxonomy/wp-skos">GitHub</a></span>
