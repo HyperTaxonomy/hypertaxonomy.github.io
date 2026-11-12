@@ -20,6 +20,14 @@ body {
   letter-spacing: -0.01em;
 }
 
+// Same side padding as the plugin docs sites, so the logo sits in the same place.
+@media (min-width: 50rem) {
+  .site-title {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+}
+
 .site-title-logo {
   flex: none;
   width: 36px;
