@@ -200,4 +200,5 @@ platform. The suite is open source, and this is an open invitation: take it,
 port it, and let other systems join the network. The code is on
 [GitHub](https://github.com/HyperTaxonomy).
 
-The first taxonomy began with naming things. The next level connects the names.
+The first taxonomy may have had one author, but the task belongs to all of us.
+This suite makes room for every author.
